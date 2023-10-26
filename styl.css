@@ -1,0 +1,392 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: cornflowerblue;
+    font-family:  Arial, sans-serif;
+    background-image: url(hopital.jpg);
+  
+}
+
+.navbar{
+    background-color:aqua;
+    width: 100%;
+    height: 10%;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.elemcentre{
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ gap: 20px;;
+}
+
+.logo{
+    color: brown;
+    padding-left:20px;
+}
+span{
+ color: blue;
+ font-size: 2em; 
+}
+
+li{
+    list-style: none;
+    
+   }
+   nav ul li a{
+    text-decoration: none;
+   }
+nav ul li a:hover{
+    color: blue;
+    transform: translatey(-3px);
+    text-decoration: none;
+   }
+   
+   .image{
+    width: 100%;
+    height: 30%;
+    margin-top: 5%;
+   }
+   .visite{
+    text-align: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+}
+h2{
+    font-size: 1.5em;
+    letter-spacing: 1px;
+    margin-left: 2em;
+   }
+
+.idem{
+    font-size: 1em;
+    padding:5px;
+   }
+
+   .wave{
+    width: 45%;
+   }
+
+   .orange{
+    width: 30%;
+   }
+
+   .paye{
+    padding: 20px;
+   }
+   .pharmacie{
+    display: flex;
+
+   }
+
+   .pharm{
+    width: 300px;
+    border: solid white;
+    margin: 1em;
+
+   }
+
+   .rest{
+    width: 200px;
+
+   }
+
+   .restaurant{
+    display: flex;
+    width: 300px;
+   }
+
+   .rest{
+    margin: 1em;
+    border: solid white;
+   }
+
+   .tab{
+    margin: 1em;
+    border: solid white;
+    font-family: Arial, Helvetica, sans-serif;
+    }
+   .clique{
+    margin: 2em;
+    border: solid gray;
+    background-color: rgba(128, 128, 128, 0.445);
+    padding: 5px;
+    width: 19em;
+    transition: 0.5s;
+    cursor: pointer;
+   }
+
+   .clique:hover{
+    background-color: whitesmoke;
+   }
+   form{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr ;
+    grid-template-areas: 
+    "i1"
+    "i2"
+    "i2 i4"
+    ;
+     
+   }
+  #name{
+    margin: 10px;
+    max-width: 50%;
+   }
+   #surname{
+    margin-left: 10px;
+    margin-right: 10px;
+    max-width: 50%;
+   }
+   .position{
+    position: relative;
+   }
+   .btn1{
+    background: white;
+    position: absolute;
+    left: 60px;
+    bottom: 5px;
+    width: 7px;
+    height: 6px;
+    border-top-left-radius: 5px ;
+    border-bottom-left-radius: 5px;
+   }
+   .btn2{
+    background: white;
+    position: absolute;
+    right: 60px;
+    bottom: 5px;
+    width: 7px;
+    height: 6px;
+    border-top-right-radius: 5px ;
+    border-bottom-right-radius: 5px;
+   }
+   .espace{
+    position: absolute;
+    left: 40%;
+    right: 40%;
+    height: 20px;
+    min-width: 70px;
+    background: rgba(255, 255, 255, 0.555);
+   }
+   .boite3{
+    display: flex;
+    padding: 2px;
+   }
+ .gest{
+    margin-left: 10px;
+    margin-bottom: 10px;
+    background: gray;
+ }
+
+ .colonne{
+    border: solid;
+ }
+
+ label{
+    font-size: 1.3em;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    padding: 5px;
+ }
+ h3{
+    font-size: 1.3em;
+    margin-left: 20px;
+    padding: 5px;
+ }
+
+ #service{
+   margin-left: 60px;
+   margin-top: 20px;
+   padding: 5px;
+   font-size: 1em;
+}
+ .service{
+   margin-left: 60px;
+   margin-top: 20px;
+   padding: 5px;
+   font-size: 1em;
+
+ }
+
+.bouton{
+   margin-left: 60px;
+   margin-top: 20px;
+   padding: 5px;
+   font-size: 1em;
+   width: 60%;
+}
+
+.rating {
+   unicode-bidi: bidi-override;
+   direction: rtl;
+   text-align: center;
+}
+
+.rating input {
+   display: none;
+}
+
+.rating label {
+   display: inline-block;
+   padding: 5px;
+   font-size: 20px;
+   color: #ddd;
+   cursor: pointer;
+}
+
+.rating label:hover,
+.rating label:hover ~ label,
+.rating input:checked ~ label {
+   color: #f90;
+}
+
+textarea{
+   margin-left: 30px;
+   width: 50%;
+}
+
+h2, h3 {
+   color: #333;
+}
+
+table {
+   width: 100%;
+   border-collapse: collapse;
+   margin-bottom: 20px;
+}
+
+table, th, td {
+   border: 1px solid #ddd;
+}
+
+th, td {
+   padding: 12px;
+   text-align: left;
+}
+
+th {
+   background-color: #f2f2f2;
+}
+
+button {
+   background-color: #4CAF50;
+   color: white;
+   padding: 10px;
+   margin: 5px;
+   border: none;
+   border-radius: 4px;
+   cursor: pointer;
+}
+
+button:hover {
+   background-color: #45a049;
+}
+
+#reservationsPassees,
+#reservationsAVenir {
+   margin-bottom: 30px;
+}
+
+#reservationsAVenir {
+   background-color: #e6f7ff;
+}
+
+#reservationsPassees h3,
+#reservationsAVenir h3 {
+   color: #333;
+   border-bottom: 2px solid #ddd;
+   padding-bottom: 10px;
+   margin-bottom: 10px;
+}
+
+#submit{
+   width: 13em;
+   margin-left: 60px;
+   margin-top: 20px;
+   padding: 5px;
+   font-size: 1em;
+}
+
+a{
+   font-size: 1em;
+   color: blue;
+   min-width:  1%;
+
+}
+
+input{
+   font-size: 1.3em;
+   margin: 0px 5px 0 50px;
+   padding: Opx;
+   width: 60%;
+   height: 30px;
+}
+
+.connexion{
+   width: 400px;
+   height: 330px;
+   margin-top: 190px;
+   margin-left: 40%;
+   background-color: white;
+   border-radius: 5px;
+   padding: 20px;
+}
+
+.connex{
+   border-radius: 5px;
+   padding: 7px;
+   width: 20em;
+   font-size: 1em;
+   margin: 0px 5px 0 50px;
+   padding: Opx;
+   text-decoration: none;
+}
+
+h4{
+   width: 40%;
+   height: 200px;
+   margin-left: 10%;
+   margin-top: 8px;
+}
+
+p{
+   margin-left: 30em;
+}
+
+.noir{
+    background-color: black;
+    width: 100%;
+    height: 300px;
+    padding-top: 2Opx;
+}
+
+#reservationForm{
+   background-color: white;
+   margin-left: 30%;
+   margin-top: 5px;
+   margin-bottom: 20px;
+   width: 50%;
+   height: 500px;
+   padding-bottom: 10px;
+}
+
+h2{
+   margin-left: 30%;
+   color: white;
+}
+
+
+
+
+
+  

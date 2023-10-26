@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>site web</title>
+        <link rel="stylesheet" href="styl.css">
+    </head>
+    <body>
+<h2>Service d'Avis et d'Évaluations</h2>
+
+        <!-- Formulaire d'avis -->
+  <form id="reviewForm">
+    <label for="rating">Évaluation:</label>
+    <div class="rating">
+        <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="Excellent">5 stars</label>
+        <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="Très bien">4 stars</label>
+        <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="Bien">3 stars</label>
+        <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="Médiocre">2 stars</label>
+        <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="Très médiocre">1 star</label>
+    </div>
+    <label for="comment">Commentaire:</label>
+    <textarea id="comment" name="comment" rows="10" cols="50"></textarea>
+
+    <button class="bouton" type="button" onclick="submitReview()">Soumettre l'avis</button>
+  </form>
+
+    <!-- Section pour afficher les avis -->
+    <div id="reviews">
+       <!-- Les avis seront affichés ici -->
+     </div>
+          <div class="noir">
+               <p> <a href="section2.html" class="identique">Services</a></p>
+               <p> <a href="section3.html" class="identique">calendrier de Disponibilité</a></p>
+               <p> <a href="section.html" class="identique">Reservation</a></p>
+               <p> <a href="section5.html" class="identique">Payement</a></p>
+               <p> <a href="sectuon6.html" class="identique">commentaire</a></p>
+              </div>
+        <script src="javascript.js"> </script>
+    </section>
+</body>
+</html>

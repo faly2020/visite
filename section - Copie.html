@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>site web</title>
+        <link rel="stylesheet" href="styl.css">
+        <script src="https://js.stripe.com/v3/"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+    <section>
+       <h2>Réservation</h2>
+        <form id="reservationForm">
+        <label for="date">Date de réservation:</label>
+        <input type="date" id="date" name="date" required><br>
+    
+        <label for="heure">Heure de réservation:</label>
+        <input type="time" id="heure" name="heure" required><br>
+    
+        <label for="nombrePersonnes">Nombre de personnes:</label>
+        <input type="number" id="nombrePersonnes" name="nombrePersonnes" min="1" required><br>
+    
+        <button class="bouton b1" type="button" onclick="reserver()">Réserver</button>
+    <!-- Boutons pour modifier ou annuler -->
+      <button class="bouton b2" onclick="modifierReservation()">Modifier</button>
+      <button class="bouton b3" onclick="annulerReservation()">Annuler</button>
+    </form>
+    <div class="noir">
+    <p> <a href="section2.html" class="identique">Services</a></p>
+    <p> <a href="section3.html" class="identique">calendrier de Disponibilité</a></p>
+    <p> <a href="section.html" class="identique">Reservation</a></p>
+    <p> <a href="section5.html" class="identique">Payement</a></p>
+    <p> <a href="sectuon6.html" class="identique">commentaire</a></p>
+  </div>
+  </section>
+ </body>
+</html>

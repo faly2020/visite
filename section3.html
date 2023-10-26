@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>site web</title>
+        <link rel="stylesheet" href="styl.css">
+       </head>
+    <body>
+        <section>
+            <h2>calendrier de Disponibilité</h2> 
+            <label for="service"> les services offertes </label><br>
+            <select name="services" id="service" size="1">
+                <option value="chirurgical" onclick="addService('10/10/2023', 8, 18)">chirurgical</option>
+                <option value="ophtalmolioque" onclick="addService('16/10/2023', 8, 13)">ophtalmolioque</option>
+                <option value="dentiste" onclick="addService('14/10/2023', 8, 12)">dentiste</option>
+                <div class="serviceDisponible"></div>
+            </select>
+            <div id="plagesHoraires"></div>
+            <h3>selectionner votre horaire preferee</h3>
+            <label for="">Sélectionner le service souhaité</label><br>
+            <input class="service" type="text" id="serviceInput"><br>
+            <input class="service" type="date" id="dateInput"><br>
+            <input class="service" type="time" id="timeInput"><br>
+            <button class="bouton" type="button" onclick="reservation()">Réserver</button>
+        </section>
+        <div class="noir">
+              <p> <a href="section2.html" class="identique">Services</a></p>
+               <p> <a href="section3.html" class="identique">calendrier de Disponibilité</a></p>
+               <p> <a href="section.html" class="identique">Reservation</a></p>
+               <p> <a href="section5.html" class="identique">Payement</a></p>
+               <p> <a href="sectuon6.html" class="identique">commentaire</a></p>
+        </div>
+        <script src="javascript.js"> </script>
+    </body>
+</html>
